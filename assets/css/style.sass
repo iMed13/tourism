@@ -1,0 +1,347 @@
+
+// MIX INS
+
+$laptop: 1200px
+$laptop_owl: 1050px
+$laptop_low: 1000px
+$tablet: 768px
+$mobile: 500px
+$iphonefives: 330px
+=iphonefives
+  @media (max-width: #{$iphonefives})
+    @content
+=laptop
+  @media (max-width: #{$laptop})
+    @content
+=tablet
+  @media (max-width: #{$tablet})
+    @content
+=mobile
+  @media (max-width: #{$mobile})
+    @content
+=laptop_low
+  @media (max-width: #{$laptop_low})
+    @content
+=laptop_owl
+  @media (max-width: #{$laptop_owl})
+    @content
+
+//---------------------------------------------------------------
+//---------------------------------------------------------------
+//---------------------------------------------------------------
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    text-decoration: none !important 
+
+//0.fixed-index------------------------------------
+.active_fx_ind
+    top: 0 !important
+.fixed-index
+    display: block
+    position: fixed
+    z-index: 999999 !important
+    left: 0
+    top: -100%
+    width: 100%
+    min-height: 100vh
+    height: 100%
+    transition: all 0.5s
+    background: rgba(32,50,94, 0.8)
+    .fixed_content
+        margin: 0 auto
+        width: 90%
+        height: 100%
+
+        .svg
+            position: relative
+            top: 50%
+            left: 50%
+            height: 400px !important
+            transform: translate(-50%, -50%)
+            +laptop_owl
+                top: 10%
+            .active_fx_land
+                fill: #D4D4D6 !important
+            .land
+                transform-origin: 50% 50% !important
+                fill: black
+                transition: fill 0.6s
+                width: 100%
+                height: 100%
+        .fixed_row_map
+            height: 100% !important
+            .col-xl-6
+                display: flex
+                flex-direction: column
+                min-height: 50%
+                .fx_more
+                    padding: 20px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    +laptop_owl
+                        justify-content: flex-end 
+                        
+                    a
+                        width: 145px
+                        padding: 10px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        border: 2px solid #c9c7c8
+                        color: #C71F43
+                        text-decoration: none
+                        text-transform: capitalize
+                        position: relative
+                        text-align: center
+                        color: #fff
+                        font-size: 18px
+                        font-weight: 400
+                        +mobile
+                            width: 100px !important
+                            font-size: 15px
+                        &:after
+                            content: ""
+                            position: absolute
+                            top: -2px
+                            left: -2px
+                            width: 20px
+                            height: 20px
+                            border-color: #C71F43
+                            border-style: solid
+                            border-width: 2px 0 0 2px
+                            transition: all 0.3s
+                        &:before
+                            content: ""
+                            position: absolute
+                            bottom: -2px
+                            right: -2px
+                            width: 20px
+                            height: 20px
+                            border-color: #C71F43
+                            border-style: solid
+                            border-width: 0 2px 2px 0 
+                            transition: all 0.3s
+                        &:hover:before, &:hover:after
+                            width: calc( 100% + 4px )
+                            height: calc( 100% + 4px )
+                .fx_title
+                    margin-top: 100px
+                    color: #fff
+                    font-size: 30px
+                    text-align: center
+                    +laptop_owl
+                        text-align: right
+                        margin-top: 20px
+
+        .information_content
+            height: 100%
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            padding: 70px 0
+            +laptop_owl
+                padding-bottom: unset !important
+            
+            ::-webkit-scrollbar
+                display: none
+            .fas
+                font-size: 20px
+                position: absolute
+                right: 10px
+                top: 30px
+                color: #fff
+                transition: all 0.5s
+                &:hover
+                    color: red
+                    cursor: pointer
+                    transform: rotate(-180deg)
+                    
+            p
+                overflow: auto
+                height: 100%
+                color: #fff
+                text-align: justify
+                img
+                    +tablet
+                        width: 100% !important
+                &>:nth-child(even)
+                    width: 500px
+                    float: left
+                    margin: 20px 20px 20px 0
+                &>:nth-child(odd)
+                    width: 500px
+                    float: right
+                    margin: 20px 0 20px 20px 
+//1.index-main------------------------------------
+.index-main
+    min-height: 100vh
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    .map-content
+        width: 90%
+        height: 100%
+        .svg
+        #GEO3015
+            stroke: red
+        .land
+            fill: #F0F0F1
+            fill-opacity: 1
+            stroke: white
+            stroke-opacity: 1
+            stroke-width: 0.5
+            cursor: pointer
+            &:hover
+                fill: #D4D4D6
+
+//2.eachpage-------------------------------------
+.mein_header
+    padding: unset !important
+    border-bottom: 1px solid #abb2b2
+    nav
+        height: 100%
+        width: 100% 
+        background: #000
+        display: flex
+        justify-content: space-between
+        align-items: center
+        ul
+            list-style-type: none
+            display: flex
+            align-items: center
+            margin-bottom: 0rem !important
+            .mainpage
+                background: #66666D
+                border: none
+            li
+                border-left: 1px solid #abb2b2
+                padding: 10px 15px
+                a
+                    color: #abb2b2
+                    font-family: BPG-DejaVu
+                &>:hover
+                    color: #fff
+.each_page_header
+    height: 60vh
+    overflow: hidden
+    .header_owl
+        height: 100%
+        .row
+            height: 100%
+            .col-lg-12
+                height: 100%
+                padding: unset !important
+                .owl-carousel
+                    height: 100%
+                    .owl-stage-outer
+                        height: 100%
+                        .owl-stage
+                            height: 100%
+                            .owl-item
+                                height: 100%
+                                .item
+                                    height: 100%
+                                    background: red
+                                    overflow: hidden
+                                    img
+                                        height: 100%
+                                        object-fit: cover
+.main-page
+    .container
+        position: relative
+        overflow: hidden
+        .active_srch_frm
+            right: 90px !important
+        .search_form
+            position: absolute
+            right: -100%
+            top: 50%
+            transform: translateY(-50%)
+            transition: all 0.5s
+            z-index: 10
+            input
+                padding: 15px 10px
+                width: 500px
+                display: flex
+                align-items: center
+                justify-content: center
+                border: 2px solid #c9c7c8
+                outline: none
+                border-radius: 5px
+        .header_menu
+            nav
+                width: 100% 
+                padding: 10px 20px
+                background: #D4D4D6
+                display: flex
+                justify-content: space-between
+                align-items: center
+                .head_logo
+                    width: 50px 
+                    img
+                        width: 100%
+                ul
+                    list-style-type: none
+                    display: flex
+                    align-items: center
+                    margin-bottom: 0rem !important
+                    li
+                        margin: 0 10px
+                        .search_btn
+                            cursor: pointer
+                            font-size: 25px
+                            color: #C71F43
+                            transition: all 0.5s
+                            &:hover
+                                transform: rotate(90deg)
+                        .active_head_menu
+                            border-color: #C71F43
+                        a
+                            width: fit-content
+                            font-family: BPG-DejaVu
+                            padding: 5px 10px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            border: 2px solid #c9c7c8
+                            color: #C71F43
+                            text-decoration: none
+                            text-transform: capitalize
+                            position: relative
+                            text-align: center
+                            font-size: 18px
+                            font-weight: 400
+                            +mobile
+                                width: 100px !important
+                                font-size: 15px
+                            &:after
+                                content: ""
+                                position: absolute
+                                top: -2px
+                                left: -2px
+                                width: 20px
+                                height: 20px
+                                border-color: #C71F43
+                                border-style: solid
+                                border-width: 2px 0 0 2px
+                                transition: all 0.3s
+                            &:before
+                                content: ""
+                                position: absolute
+                                bottom: -2px
+                                right: -2px
+                                width: 20px
+                                height: 20px
+                                border-color: #C71F43
+                                border-style: solid
+                                border-width: 0 2px 2px 0 
+                                transition: all 0.3s
+                            &:hover:before, &:hover:after
+                                width: calc( 100% + 4px )
+                                height: calc( 100% + 4px )
+                    
