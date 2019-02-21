@@ -1,12 +1,20 @@
 
 // MIX INS
-
-$laptop: 1200px
-$laptop_owl: 1050px
+$large: 2500px
+$mdllarge: 1900px
+$laptop: 1450px
+$laptop_owl: 1250px
 $laptop_low: 1000px
-$tablet: 768px
-$mobile: 500px
+$tablet: 767px
+$mobile: 450px
 $iphonefives: 330px
+
+=mdllarge
+  @media (max-width: #{$large})
+    @content
+=large
+  @media (max-width: #{$large})
+    @content
 =iphonefives
   @media (max-width: #{$iphonefives})
     @content
@@ -53,15 +61,22 @@ $iphonefives: 330px
         margin: 0 auto
         width: 90%
         height: 100%
-
         .svg
             position: relative
             top: 50%
             left: 50%
             height: 400px !important
             transform: translate(-50%, -50%)
-            +laptop_owl
+            +mdllarge
+                top: 30% 
+            +tablet
+                padding: 0 100px
+                top: 5%
+            +mobile
+                padding: unset !important
                 top: 10%
+
+
             .active_fx_land
                 fill: #D4D4D6 !important
             .land
@@ -72,7 +87,7 @@ $iphonefives: 330px
                 height: 100%
         .fixed_row_map
             height: 100% !important
-            .col-xl-6
+            .col-md-6
                 display: flex
                 flex-direction: column
                 min-height: 50%
@@ -135,6 +150,7 @@ $iphonefives: 330px
                     +laptop_owl
                         text-align: right
                         margin-top: 20px
+                        font-size: 20px
 
         .information_content
             height: 100%
@@ -143,7 +159,7 @@ $iphonefives: 330px
             left: 50%
             transform: translateX(-50%)
             padding: 70px 0
-            +laptop_owl
+            +tablet
                 padding-bottom: unset !important
             
             ::-webkit-scrollbar
@@ -355,11 +371,78 @@ $iphonefives: 330px
                         width: 100%
                         object-fit: cover
                 .tour_description
-                    border-left: 1px solid #000 
-                    border-right: 1px solid #000 
-                    border-bottom: 1px solid #000  
-                    text-align: justify
-                    padding: 50px 10px 10px 10px
-                    font-family: BPG-DejaVu
-                    h4
+                    border-left: 1px solid #0B4460 
+                    border-right: 1px solid #0B4460 
+                    border-bottom: 1px solid #0B4460
+                    padding: 20px 15px 10px 15px
+                    p
+                        font-family: BPG-DejaVu  
+                        text-align: justify
+                        font-size: 13px
+                    h6
+                        font-family: BPG-DejaVu 
                         padding: 10px 0
+                        color: #C71F43
+                    .each_road_info
+                        display: flex
+                        flex-wrap: wrap
+                        justify-content: space-between
+                    .each_read_more
+                        padding-top: 20px
+                        display: flex
+                        justify-content: flex-end
+                        a
+                            width: fit-content
+                            font-family: BPG-DejaVu
+                            padding: 5px 10px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            border: 2px solid #c9c7c8
+                            color: #C71F43
+                            text-decoration: none
+                            text-transform: capitalize
+                            position: relative
+                            text-align: center
+                            font-size: 18px
+                            font-weight: 400
+                            +mobile
+                                width: 100px !important
+                                font-size: 15px
+                            &:after
+                                content: ""
+                                position: absolute
+                                top: -2px
+                                left: -2px
+                                width: 20px
+                                height: 20px
+                                border-color: #C71F43
+                                border-style: solid
+                                border-width: 2px 0 0 2px
+                                transition: all 0.3s
+                            &:before
+                                content: ""
+                                position: absolute
+                                bottom: -2px
+                                right: -2px
+                                width: 20px
+                                height: 20px
+                                border-color: #C71F43
+                                border-style: solid
+                                border-width: 0 2px 2px 0 
+                                transition: all 0.3s
+                            &:hover:before, &:hover:after
+                                width: calc( 100% + 4px )
+                                height: calc( 100% + 4px )  
+                    .each_location, .each_date,
+                    .each_weather
+                        display: flex
+                        align-items: center
+                        padding: 5px 0
+                        .fas
+                            margin-right: 20px
+                            font-size: 20px 
+                            color: #0B4460
+                        span
+                            font-size: 15px
+                            font-family: BPG-DejaVu 
