@@ -6,8 +6,21 @@ $(document).ready(function(){
         $(".active_single_image").find("img").attr("src", 
         $(this).find("img").attr("src"));
   });
+
+  $('.tours').show();
+$('.header_menu ul li span').on("click",function(e) {
+	var content = $(e.target).attr('data-content');
+	$('.'+content).show();
+	$('.'+content).siblings(".sectionss").hide();
+});
     // --------------------------------
-    $(".header_menu ul li a").first().addClass("active_head_menu");
+
+    $(".header_menu ul li span").first().addClass("active_head_menu");
+    $(".header_menu ul li span").click(function(){
+        $(this).parent().siblings().children().removeClass("active_head_menu");
+        $(this).addClass("active_head_menu");
+    });
+    
 
     $(".map-content path").click(function(){
         $(".fixed-index").addClass("active_fx_ind");
