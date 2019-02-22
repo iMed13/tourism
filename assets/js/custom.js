@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    //----------------------gallery owl in single page-------------------
+        var forsinglegall=$(".owl-item.active").find(".item").children().attr("src");
+        $(".active_single_image").find("img").attr("src", forsinglegall);
+      $(".owl-item").find(".item").click(function() {
+        $(".active_single_image").find("img").attr("src", 
+        $(this).find("img").attr("src"));
+  });
+    // --------------------------------
     $(".header_menu ul li a").first().addClass("active_head_menu");
 
     $(".map-content path").click(function(){

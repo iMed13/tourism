@@ -45,6 +45,7 @@ $iphonefives: 330px
 
 //0.fixed-index------------------------------------
 .active_fx_ind
+    overflow: hidden
     top: 0 !important
 .fixed-index
     display: block
@@ -216,7 +217,7 @@ $iphonefives: 330px
                 fill: #D4D4D6
 
 //2.eachpage-------------------------------------
-.mein_header
+.main_header
     padding: unset !important
     border-bottom: 1px solid #abb2b2
     nav
@@ -245,7 +246,7 @@ $iphonefives: 330px
 .each_page_header
     height: 60vh
     overflow: hidden
-    .header_owl
+    .header_owl, .single_gallery_owl
         height: 100%
         .row
             height: 100%
@@ -262,14 +263,16 @@ $iphonefives: 330px
                                 height: 100%
                                 .item
                                     height: 100%
-                                    background: red
                                     overflow: hidden
                                     img
                                         height: 100%
                                         object-fit: cover
+.single_main_page
+    padding-top: 50px
 .main-page
-    padding-bottom: 100px
+    background: #f2f2f2
     .container
+        padding-bottom: 100px
         position: relative
         overflow: hidden
         .active_srch_frm
@@ -277,8 +280,7 @@ $iphonefives: 330px
         .search_form
             position: absolute
             right: -100%
-            top: 50%
-            transform: translateY(-50%)
+            top: 5px
             transition: all 0.5s
             z-index: 10
             input
@@ -364,6 +366,9 @@ $iphonefives: 330px
         .tours
             padding-top: 100px
             .each_tour
+                transition: all 0.5s
+                &:hover
+                    transform: translatey(-10px)
                 .tour_image
                     height: 250px
                     img
@@ -445,4 +450,156 @@ $iphonefives: 330px
                             color: #0B4460
                         span
                             font-size: 15px
-                            font-family: BPG-DejaVu 
+                            font-family: BPG-DejaVu
+    .single_gallery
+        .single_carussel
+            height: 100%
+            background: #fff
+            padding: 15px
+            .active_single_image
+                width: 100%
+                height: 400px
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+            .single-owl
+                padding-top: 15px
+                .item
+                    cursor: move
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+    .single_about_tour
+        .tour_information
+            height: 100%
+            padding: 15px
+            background: #fff
+            .share_in_social
+                font-size: 16px
+                display: flex
+                justify-content: flex-end
+                align-items: center
+                .facebook_share
+                    width: fit-content
+                    padding: 2px 8px
+                    color: #fff
+                    border-radius: 4px
+                    background-image: linear-gradient(#4e69a2, #3b5998 50%)
+                    .fab
+                        margin-right: 10px
+            h1
+                font-size: 16px
+                color: #C71F43
+                padding: 15px
+                font-family: BPG-DejaVu 
+        h2
+            margin-right: 10px
+            margin-bottom: 0rem !important
+            font-size: 17px
+            color: #C71F43
+            font-family: BPG-DejaVu
+        .contact_info
+            margin: 20px 0
+            border: 1px solid #0B4460
+            padding: 5px 0
+            .info_title
+                display: flex
+                flex-wrap: wrap
+            .cont_info_content
+                padding: 10px 0 10px 50px
+                width: 100%
+                div
+                    padding: 5px 0
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+            .fas
+                width: 30px
+                margin-right: 20px
+                font-size: 20px 
+                color: #0B4460
+                display: flex
+                justify-content: center
+            span
+                font-size: 15px
+                font-family: BPG-DejaVu
+        .each_location, .each_date, .each_weather
+            padding: 5px 0
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            .fas
+                width: 30px
+                margin-right: 20px
+                font-size: 20px 
+                color: #0B4460
+                display: flex
+                justify-content: center
+            span
+                font-size: 15px
+                font-family: BPG-DejaVu
+        .tour_price
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            border: 1px solid #0B4460
+            margin-bottom: 20px !important
+            width: fit-content
+            margin: 0 auto
+            .fas
+                width: 30px
+                margin-right: 20px
+                font-size: 20px 
+                color: #0B4460
+                display: flex
+                justify-content: center
+            .payment
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                padding: 10px 15px 15px 15px
+                .gel
+                    font-size: 20px
+                    color: #0B4460
+                    margin-right: 10px
+                .gel_symbol
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 30px
+                    height: 30px
+                    border-radius: 100%
+                    border: 1px solid #312C46
+                    font-size: 15px
+                    color: #fff
+                    position: relative
+                    span
+                        position: relative
+                        z-index: 99
+                    &:after
+                        content: ""
+                        position: absolute
+                        left : 50%
+                        top: 50%
+                        transform: translate(-50%,-50%)
+                        width: 20px
+                        height: 20px
+                        border-radius: 100%
+                        background: #F5D3AB
+    .tour_description
+        padding: 15px
+        .desc_content
+            background: #fff
+            padding: 30px
+            h2
+                font-size: 17px
+                color: #C71F43
+                padding: 15px 0
+                font-family: BPG-DejaVu                    
+            p
+                text-align: justify
+
+                
+
