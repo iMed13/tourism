@@ -483,6 +483,43 @@ $iphonefives: 330px
         padding-left: unset !important
         +laptop_low
             padding: 15px !important
+        .hottel_price
+            .payment
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                padding: 10px 15px 15px 15px
+                font-family: BPG-DejaVu 
+                .gel
+                    font-size: 20px
+                    color: #0B4460
+                    margin-right: 10px
+                    &:nth-child(1)
+                        margin-right: 10px
+                .gel_symbol
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 30px
+                    height: 30px
+                    border-radius: 100%
+                    border: 1px solid #312C46
+                    font-size: 15px
+                    color: #fff
+                    position: relative
+                    span
+                        position: relative
+                        z-index: 99
+                    &:after
+                        content: ""
+                        position: absolute
+                        left : 50%
+                        top: 50%
+                        transform: translate(-50%,-50%)
+                        width: 20px
+                        height: 20px
+                        border-radius: 100%
+                        background: #F5D3AB
         .specy
             float: left
             width: 50%
@@ -497,7 +534,7 @@ $iphonefives: 330px
                 color: #C71F43
 
     .single_about_tour, .single_about_hotel, .hotel_species
-        .tour_information, .hotel_information, .hotel_specy
+        .tour_information, .hotel_information, .about_hottel
             height: 100%
             padding: 15px
             background: #fff
