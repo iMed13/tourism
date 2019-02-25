@@ -459,6 +459,8 @@ $iphonefives: 330px
             height: 100%
             background: #fff
             padding: 15px
+            .hotel_act_image
+                height: 450px !important
             .active_single_image
                 width: 100%
                 height: 400px
@@ -474,11 +476,35 @@ $iphonefives: 330px
                         width: 100%
                         height: 100%
                         object-fit: cover
-    .single_about_tour
-        .tour_information
+    .single_about_hotel, .hotel_species
+        padding-top: 15px
+    .hotel_species
+        width: 100% !important
+        padding-left: unset !important
+        +laptop_low
+            padding: 15px !important
+        .specy
+            float: left
+            width: 50%
+            +tablet
+                width: 100%
+                float: unset !important
+            .fas
+                color: green
+            span
+                margin-left: 10px
+                font-family: BPG-DejaVu
+                color: #C71F43
+
+    .single_about_tour, .single_about_hotel, .hotel_species
+        .tour_information, .hotel_information, .hotel_specy
             height: 100%
             padding: 15px
             background: #fff
+            .hotel_stars
+                padding-bottom: 20px
+                .far
+                    color: #C19D0A
             .share_in_social
                 font-size: 16px
                 display: flex
@@ -528,12 +554,16 @@ $iphonefives: 330px
             span
                 font-size: 15px
                 font-family: BPG-DejaVu
-        .each_location, .each_date, .each_weather
+        .checking_time
+            span
+                color: #C71F43
+        .each_location, .each_date, .each_weather,.checking_time,
+        .each_browser, .each_phone, .each_envelope
             padding: 5px 0
             display: flex
             justify-content: flex-start
             align-items: center
-            .fas
+            .fas, .fab
                 width: 30px
                 margin-right: 20px
                 font-size: 20px 
@@ -591,7 +621,7 @@ $iphonefives: 330px
                         height: 20px
                         border-radius: 100%
                         background: #F5D3AB
-    .tour_description
+    .tour_description, .hotel_description
         padding: 15px
         .payment
             display: flex
@@ -703,4 +733,13 @@ $iphonefives: 330px
                     font-size: 15px
                     font-family: BPG-DejaVu
 
-        
+//3.footer------------------------------------
+footer
+    background: #000
+    .container
+        padding: 30px 0
+        .copyright
+            color: #fff
+            font-family: BPG-DejaVu
+            +mobile
+                text-align: center

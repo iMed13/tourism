@@ -716,6 +716,10 @@
   padding: 15px;
 }
 
+.main-page .single_gallery .single_carussel .hotel_act_image {
+  height: 450px !important;
+}
+
 .main-page .single_gallery .single_carussel .active_single_image {
   width: 100%;
   height: 400px;
@@ -743,13 +747,58 @@
      object-fit: cover;
 }
 
-.main-page .single_about_tour .tour_information {
+.main-page .single_about_hotel, .main-page .hotel_species {
+  padding-top: 15px;
+}
+
+.main-page .hotel_species {
+  width: 100% !important;
+  padding-left: unset !important;
+}
+
+@media (max-width: 1000px) {
+  .main-page .hotel_species {
+    padding: 15px !important;
+  }
+}
+
+.main-page .hotel_species .specy {
+  float: left;
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .main-page .hotel_species .specy {
+    width: 100%;
+    float: unset !important;
+  }
+}
+
+.main-page .hotel_species .specy .fas {
+  color: green;
+}
+
+.main-page .hotel_species .specy span {
+  margin-left: 10px;
+  font-family: BPG-DejaVu;
+  color: #C71F43;
+}
+
+.main-page .single_about_tour .tour_information, .main-page .single_about_tour .hotel_information, .main-page .single_about_tour .hotel_specy, .main-page .single_about_hotel .tour_information, .main-page .single_about_hotel .hotel_information, .main-page .single_about_hotel .hotel_specy, .main-page .hotel_species .tour_information, .main-page .hotel_species .hotel_information, .main-page .hotel_species .hotel_specy {
   height: 100%;
   padding: 15px;
   background: #fff;
 }
 
-.main-page .single_about_tour .tour_information .share_in_social {
+.main-page .single_about_tour .tour_information .hotel_stars, .main-page .single_about_tour .hotel_information .hotel_stars, .main-page .single_about_tour .hotel_specy .hotel_stars, .main-page .single_about_hotel .tour_information .hotel_stars, .main-page .single_about_hotel .hotel_information .hotel_stars, .main-page .single_about_hotel .hotel_specy .hotel_stars, .main-page .hotel_species .tour_information .hotel_stars, .main-page .hotel_species .hotel_information .hotel_stars, .main-page .hotel_species .hotel_specy .hotel_stars {
+  padding-bottom: 20px;
+}
+
+.main-page .single_about_tour .tour_information .hotel_stars .far, .main-page .single_about_tour .hotel_information .hotel_stars .far, .main-page .single_about_tour .hotel_specy .hotel_stars .far, .main-page .single_about_hotel .tour_information .hotel_stars .far, .main-page .single_about_hotel .hotel_information .hotel_stars .far, .main-page .single_about_hotel .hotel_specy .hotel_stars .far, .main-page .hotel_species .tour_information .hotel_stars .far, .main-page .hotel_species .hotel_information .hotel_stars .far, .main-page .hotel_species .hotel_specy .hotel_stars .far {
+  color: #C19D0A;
+}
+
+.main-page .single_about_tour .tour_information .share_in_social, .main-page .single_about_tour .hotel_information .share_in_social, .main-page .single_about_tour .hotel_specy .share_in_social, .main-page .single_about_hotel .tour_information .share_in_social, .main-page .single_about_hotel .hotel_information .share_in_social, .main-page .single_about_hotel .hotel_specy .share_in_social, .main-page .hotel_species .tour_information .share_in_social, .main-page .hotel_species .hotel_information .share_in_social, .main-page .hotel_species .hotel_specy .share_in_social {
   font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -762,7 +811,7 @@
           align-items: center;
 }
 
-.main-page .single_about_tour .tour_information .share_in_social .facebook_share {
+.main-page .single_about_tour .tour_information .share_in_social .facebook_share, .main-page .single_about_tour .hotel_information .share_in_social .facebook_share, .main-page .single_about_tour .hotel_specy .share_in_social .facebook_share, .main-page .single_about_hotel .tour_information .share_in_social .facebook_share, .main-page .single_about_hotel .hotel_information .share_in_social .facebook_share, .main-page .single_about_hotel .hotel_specy .share_in_social .facebook_share, .main-page .hotel_species .tour_information .share_in_social .facebook_share, .main-page .hotel_species .hotel_information .share_in_social .facebook_share, .main-page .hotel_species .hotel_specy .share_in_social .facebook_share {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -773,18 +822,18 @@
   background-image: linear-gradient(#4e69a2, #3b5998 50%);
 }
 
-.main-page .single_about_tour .tour_information .share_in_social .facebook_share .fab {
+.main-page .single_about_tour .tour_information .share_in_social .facebook_share .fab, .main-page .single_about_tour .hotel_information .share_in_social .facebook_share .fab, .main-page .single_about_tour .hotel_specy .share_in_social .facebook_share .fab, .main-page .single_about_hotel .tour_information .share_in_social .facebook_share .fab, .main-page .single_about_hotel .hotel_information .share_in_social .facebook_share .fab, .main-page .single_about_hotel .hotel_specy .share_in_social .facebook_share .fab, .main-page .hotel_species .tour_information .share_in_social .facebook_share .fab, .main-page .hotel_species .hotel_information .share_in_social .facebook_share .fab, .main-page .hotel_species .hotel_specy .share_in_social .facebook_share .fab {
   margin-right: 10px;
 }
 
-.main-page .single_about_tour .tour_information h1 {
+.main-page .single_about_tour .tour_information h1, .main-page .single_about_tour .hotel_information h1, .main-page .single_about_tour .hotel_specy h1, .main-page .single_about_hotel .tour_information h1, .main-page .single_about_hotel .hotel_information h1, .main-page .single_about_hotel .hotel_specy h1, .main-page .hotel_species .tour_information h1, .main-page .hotel_species .hotel_information h1, .main-page .hotel_species .hotel_specy h1 {
   font-size: 16px;
   color: #C71F43;
   padding: 15px;
   font-family: BPG-DejaVu;
 }
 
-.main-page .single_about_tour h2 {
+.main-page .single_about_tour h2, .main-page .single_about_hotel h2, .main-page .hotel_species h2 {
   margin-right: 10px;
   margin-bottom: 0rem !important;
   font-size: 17px;
@@ -792,13 +841,13 @@
   font-family: BPG-DejaVu;
 }
 
-.main-page .single_about_tour .contact_info {
+.main-page .single_about_tour .contact_info, .main-page .single_about_hotel .contact_info, .main-page .hotel_species .contact_info {
   margin: 20px 0;
   border: 1px solid #0B4460;
   padding: 5px 0;
 }
 
-.main-page .single_about_tour .contact_info .info_title {
+.main-page .single_about_tour .contact_info .info_title, .main-page .single_about_hotel .contact_info .info_title, .main-page .hotel_species .contact_info .info_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -806,12 +855,12 @@
       flex-wrap: wrap;
 }
 
-.main-page .single_about_tour .contact_info .cont_info_content {
+.main-page .single_about_tour .contact_info .cont_info_content, .main-page .single_about_hotel .contact_info .cont_info_content, .main-page .hotel_species .contact_info .cont_info_content {
   padding: 10px 0 10px 50px;
   width: 100%;
 }
 
-.main-page .single_about_tour .contact_info .cont_info_content div {
+.main-page .single_about_tour .contact_info .cont_info_content div, .main-page .single_about_hotel .contact_info .cont_info_content div, .main-page .hotel_species .contact_info .cont_info_content div {
   padding: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -824,7 +873,7 @@
           align-items: center;
 }
 
-.main-page .single_about_tour .contact_info .fas {
+.main-page .single_about_tour .contact_info .fas, .main-page .single_about_hotel .contact_info .fas, .main-page .hotel_species .contact_info .fas {
   width: 30px;
   margin-right: 20px;
   font-size: 20px;
@@ -837,12 +886,19 @@
           justify-content: center;
 }
 
-.main-page .single_about_tour .contact_info span {
+.main-page .single_about_tour .contact_info span, .main-page .single_about_hotel .contact_info span, .main-page .hotel_species .contact_info span {
   font-size: 15px;
   font-family: BPG-DejaVu;
 }
 
-.main-page .single_about_tour .each_location, .main-page .single_about_tour .each_date, .main-page .single_about_tour .each_weather {
+.main-page .single_about_tour .checking_time span, .main-page .single_about_hotel .checking_time span, .main-page .hotel_species .checking_time span {
+  color: #C71F43;
+}
+
+.main-page .single_about_tour .each_location, .main-page .single_about_tour .each_date, .main-page .single_about_tour .each_weather, .main-page .single_about_tour .checking_time,
+.main-page .single_about_tour .each_browser, .main-page .single_about_tour .each_phone, .main-page .single_about_tour .each_envelope, .main-page .single_about_hotel .each_location, .main-page .single_about_hotel .each_date, .main-page .single_about_hotel .each_weather, .main-page .single_about_hotel .checking_time,
+.main-page .single_about_hotel .each_browser, .main-page .single_about_hotel .each_phone, .main-page .single_about_hotel .each_envelope, .main-page .hotel_species .each_location, .main-page .hotel_species .each_date, .main-page .hotel_species .each_weather, .main-page .hotel_species .checking_time,
+.main-page .hotel_species .each_browser, .main-page .hotel_species .each_phone, .main-page .hotel_species .each_envelope {
   padding: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -855,7 +911,13 @@
           align-items: center;
 }
 
-.main-page .single_about_tour .each_location .fas, .main-page .single_about_tour .each_date .fas, .main-page .single_about_tour .each_weather .fas {
+.main-page .single_about_tour .each_location .fas, .main-page .single_about_tour .each_location .fab, .main-page .single_about_tour .each_date .fas, .main-page .single_about_tour .each_date .fab, .main-page .single_about_tour .each_weather .fas, .main-page .single_about_tour .each_weather .fab, .main-page .single_about_tour .checking_time .fas, .main-page .single_about_tour .checking_time .fab,
+.main-page .single_about_tour .each_browser .fas,
+.main-page .single_about_tour .each_browser .fab, .main-page .single_about_tour .each_phone .fas, .main-page .single_about_tour .each_phone .fab, .main-page .single_about_tour .each_envelope .fas, .main-page .single_about_tour .each_envelope .fab, .main-page .single_about_hotel .each_location .fas, .main-page .single_about_hotel .each_location .fab, .main-page .single_about_hotel .each_date .fas, .main-page .single_about_hotel .each_date .fab, .main-page .single_about_hotel .each_weather .fas, .main-page .single_about_hotel .each_weather .fab, .main-page .single_about_hotel .checking_time .fas, .main-page .single_about_hotel .checking_time .fab,
+.main-page .single_about_hotel .each_browser .fas,
+.main-page .single_about_hotel .each_browser .fab, .main-page .single_about_hotel .each_phone .fas, .main-page .single_about_hotel .each_phone .fab, .main-page .single_about_hotel .each_envelope .fas, .main-page .single_about_hotel .each_envelope .fab, .main-page .hotel_species .each_location .fas, .main-page .hotel_species .each_location .fab, .main-page .hotel_species .each_date .fas, .main-page .hotel_species .each_date .fab, .main-page .hotel_species .each_weather .fas, .main-page .hotel_species .each_weather .fab, .main-page .hotel_species .checking_time .fas, .main-page .hotel_species .checking_time .fab,
+.main-page .hotel_species .each_browser .fas,
+.main-page .hotel_species .each_browser .fab, .main-page .hotel_species .each_phone .fas, .main-page .hotel_species .each_phone .fab, .main-page .hotel_species .each_envelope .fas, .main-page .hotel_species .each_envelope .fab {
   width: 30px;
   margin-right: 20px;
   font-size: 20px;
@@ -868,12 +930,15 @@
           justify-content: center;
 }
 
-.main-page .single_about_tour .each_location span, .main-page .single_about_tour .each_date span, .main-page .single_about_tour .each_weather span {
+.main-page .single_about_tour .each_location span, .main-page .single_about_tour .each_date span, .main-page .single_about_tour .each_weather span, .main-page .single_about_tour .checking_time span,
+.main-page .single_about_tour .each_browser span, .main-page .single_about_tour .each_phone span, .main-page .single_about_tour .each_envelope span, .main-page .single_about_hotel .each_location span, .main-page .single_about_hotel .each_date span, .main-page .single_about_hotel .each_weather span, .main-page .single_about_hotel .checking_time span,
+.main-page .single_about_hotel .each_browser span, .main-page .single_about_hotel .each_phone span, .main-page .single_about_hotel .each_envelope span, .main-page .hotel_species .each_location span, .main-page .hotel_species .each_date span, .main-page .hotel_species .each_weather span, .main-page .hotel_species .checking_time span,
+.main-page .hotel_species .each_browser span, .main-page .hotel_species .each_phone span, .main-page .hotel_species .each_envelope span {
   font-size: 15px;
   font-family: BPG-DejaVu;
 }
 
-.main-page .single_about_tour .tour_price {
+.main-page .single_about_tour .tour_price, .main-page .single_about_hotel .tour_price, .main-page .hotel_species .tour_price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -891,7 +956,7 @@
   margin: 0 auto;
 }
 
-.main-page .single_about_tour .tour_price .fas {
+.main-page .single_about_tour .tour_price .fas, .main-page .single_about_hotel .tour_price .fas, .main-page .hotel_species .tour_price .fas {
   width: 30px;
   margin-right: 20px;
   font-size: 20px;
@@ -904,7 +969,7 @@
           justify-content: center;
 }
 
-.main-page .single_about_tour .tour_price .payment {
+.main-page .single_about_tour .tour_price .payment, .main-page .single_about_hotel .tour_price .payment, .main-page .hotel_species .tour_price .payment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -917,13 +982,13 @@
   padding: 10px 15px 15px 15px;
 }
 
-.main-page .single_about_tour .tour_price .payment .gel {
+.main-page .single_about_tour .tour_price .payment .gel, .main-page .single_about_hotel .tour_price .payment .gel, .main-page .hotel_species .tour_price .payment .gel {
   font-size: 20px;
   color: #0B4460;
   margin-right: 10px;
 }
 
-.main-page .single_about_tour .tour_price .payment .gel_symbol {
+.main-page .single_about_tour .tour_price .payment .gel_symbol, .main-page .single_about_hotel .tour_price .payment .gel_symbol, .main-page .hotel_species .tour_price .payment .gel_symbol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -942,12 +1007,12 @@
   position: relative;
 }
 
-.main-page .single_about_tour .tour_price .payment .gel_symbol span {
+.main-page .single_about_tour .tour_price .payment .gel_symbol span, .main-page .single_about_hotel .tour_price .payment .gel_symbol span, .main-page .hotel_species .tour_price .payment .gel_symbol span {
   position: relative;
   z-index: 99;
 }
 
-.main-page .single_about_tour .tour_price .payment .gel_symbol:after {
+.main-page .single_about_tour .tour_price .payment .gel_symbol:after, .main-page .single_about_hotel .tour_price .payment .gel_symbol:after, .main-page .hotel_species .tour_price .payment .gel_symbol:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -960,11 +1025,11 @@
   background: #F5D3AB;
 }
 
-.main-page .tour_description {
+.main-page .tour_description, .main-page .hotel_description {
   padding: 15px;
 }
 
-.main-page .tour_description .payment {
+.main-page .tour_description .payment, .main-page .hotel_description .payment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -977,20 +1042,20 @@
   padding: 15px 0;
 }
 
-.main-page .tour_description .payment .gel {
+.main-page .tour_description .payment .gel, .main-page .hotel_description .payment .gel {
   font-size: 20px;
   color: #0B4460;
   margin-right: 5px;
 }
 
-.main-page .tour_description .payment .gel > :first-child {
+.main-page .tour_description .payment .gel > :first-child, .main-page .hotel_description .payment .gel > :first-child {
   margin-right: 15px;
   color: #C71F43;
   font-size: 15px;
   font-family: BPG-DejaVu;
 }
 
-.main-page .tour_description .payment .gel_symbol {
+.main-page .tour_description .payment .gel_symbol, .main-page .hotel_description .payment .gel_symbol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1009,12 +1074,12 @@
   position: relative;
 }
 
-.main-page .tour_description .payment .gel_symbol span {
+.main-page .tour_description .payment .gel_symbol span, .main-page .hotel_description .payment .gel_symbol span {
   position: relative;
   z-index: 99;
 }
 
-.main-page .tour_description .payment .gel_symbol:after {
+.main-page .tour_description .payment .gel_symbol:after, .main-page .hotel_description .payment .gel_symbol:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -1027,19 +1092,19 @@
   background: #F5D3AB;
 }
 
-.main-page .tour_description .desc_content {
+.main-page .tour_description .desc_content, .main-page .hotel_description .desc_content {
   background: #fff;
   padding: 30px;
 }
 
-.main-page .tour_description .desc_content h2 {
+.main-page .tour_description .desc_content h2, .main-page .hotel_description .desc_content h2 {
   font-size: 17px;
   color: #C71F43;
   padding: 15px 0;
   font-family: BPG-DejaVu;
 }
 
-.main-page .tour_description .desc_content p {
+.main-page .tour_description .desc_content p, .main-page .hotel_description .desc_content p {
   text-align: justify;
 }
 
@@ -1140,5 +1205,24 @@
 .contact_main .detal_info_contact .info_content div span {
   font-size: 15px;
   font-family: BPG-DejaVu;
+}
+
+footer {
+  background: #000;
+}
+
+footer .container {
+  padding: 30px 0;
+}
+
+footer .container .copyright {
+  color: #fff;
+  font-family: BPG-DejaVu;
+}
+
+@media (max-width: 450px) {
+  footer .container .copyright {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
