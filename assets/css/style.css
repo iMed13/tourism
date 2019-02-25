@@ -779,10 +779,10 @@
 .main-page .hotel_species .hottel_price .payment .gel {
   font-size: 20px;
   color: #0B4460;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
-.main-page .hotel_species .hottel_price .payment .gel:nth-child(1) {
+.main-page .hotel_species .hottel_price .payment .gel .price {
   margin-right: 10px;
 }
 
@@ -1086,11 +1086,11 @@
   background: #F5D3AB;
 }
 
-.main-page .tour_description, .main-page .hotel_description {
+.main-page .tour_description, .main-page .hotel_description, .main-page .signseeing_description {
   padding: 15px;
 }
 
-.main-page .tour_description .payment, .main-page .hotel_description .payment {
+.main-page .tour_description .payment, .main-page .hotel_description .payment, .main-page .signseeing_description .payment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1103,20 +1103,20 @@
   padding: 15px 0;
 }
 
-.main-page .tour_description .payment .gel, .main-page .hotel_description .payment .gel {
+.main-page .tour_description .payment .gel, .main-page .hotel_description .payment .gel, .main-page .signseeing_description .payment .gel {
   font-size: 20px;
   color: #0B4460;
   margin-right: 5px;
 }
 
-.main-page .tour_description .payment .gel > :first-child, .main-page .hotel_description .payment .gel > :first-child {
+.main-page .tour_description .payment .gel > :first-child, .main-page .hotel_description .payment .gel > :first-child, .main-page .signseeing_description .payment .gel > :first-child {
   margin-right: 15px;
   color: #C71F43;
   font-size: 15px;
   font-family: BPG-DejaVu;
 }
 
-.main-page .tour_description .payment .gel_symbol, .main-page .hotel_description .payment .gel_symbol {
+.main-page .tour_description .payment .gel_symbol, .main-page .hotel_description .payment .gel_symbol, .main-page .signseeing_description .payment .gel_symbol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1135,12 +1135,12 @@
   position: relative;
 }
 
-.main-page .tour_description .payment .gel_symbol span, .main-page .hotel_description .payment .gel_symbol span {
+.main-page .tour_description .payment .gel_symbol span, .main-page .hotel_description .payment .gel_symbol span, .main-page .signseeing_description .payment .gel_symbol span {
   position: relative;
   z-index: 99;
 }
 
-.main-page .tour_description .payment .gel_symbol:after, .main-page .hotel_description .payment .gel_symbol:after {
+.main-page .tour_description .payment .gel_symbol:after, .main-page .hotel_description .payment .gel_symbol:after, .main-page .signseeing_description .payment .gel_symbol:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -1153,19 +1153,19 @@
   background: #F5D3AB;
 }
 
-.main-page .tour_description .desc_content, .main-page .hotel_description .desc_content {
+.main-page .tour_description .desc_content, .main-page .hotel_description .desc_content, .main-page .signseeing_description .desc_content {
   background: #fff;
   padding: 30px;
 }
 
-.main-page .tour_description .desc_content h2, .main-page .hotel_description .desc_content h2 {
+.main-page .tour_description .desc_content h2, .main-page .hotel_description .desc_content h2, .main-page .signseeing_description .desc_content h2 {
   font-size: 17px;
   color: #C71F43;
   padding: 15px 0;
   font-family: BPG-DejaVu;
 }
 
-.main-page .tour_description .desc_content p, .main-page .hotel_description .desc_content p {
+.main-page .tour_description .desc_content p, .main-page .hotel_description .desc_content p, .main-page .signseeing_description .desc_content p {
   text-align: justify;
 }
 
